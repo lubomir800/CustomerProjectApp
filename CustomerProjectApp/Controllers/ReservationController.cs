@@ -19,7 +19,7 @@ namespace CustomerProjectApp.Controllers
             if (reservation == null)
             {
                 return NotFound();
-            }
+        }
             return View(reservation);
         }
 
@@ -29,7 +29,7 @@ namespace CustomerProjectApp.Controllers
         public IActionResult Edit(int id, Reservation reservation)
         {
             if (id != reservation.Id)
-            {
+        {
                 return NotFound();
             }
 
@@ -49,9 +49,9 @@ namespace CustomerProjectApp.Controllers
             if (reservation == null)
             {
                 return NotFound();
-            }
+    }
             return View(reservation);
-        }
+}
 
         // POST: Reservation/Delete/5
         [HttpPost, ActionName("Delete")]
